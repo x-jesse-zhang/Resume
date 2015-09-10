@@ -1,0 +1,112 @@
+% LaTeX resume using res.cls
+\documentclass[resmargin]{res}
+\usepackage[top = .7in, bottom = .5in, left = 1in]{geometry}
+\usepackage{enumitem}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.1in} % set width of text portion
+%\setlist{nolistsep}
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+\moveleft.5\hoffset\vbox{\centerline{\Huge\bf Jesse Zhang}}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+\address{\small 404 E. Stoughton St\\
+\small Apt \#4\\
+\small Champaign, IL 61820}
+\address{\small xzhan121@illinois.edu\\
+\small cell: 502.510.4947\\
+\small github: macisasandwich}
+
+
+\begin{resume}
+
+\vspace{-3mm}
+\section{EDUCATION} {\sl Bachelor of Science,} Computer Engineering \\
+                      % \sl will be bold italic in New Century Schoolbook (or
+	              % any postscript font) and just slanted in
+		      %	Computer Modern (default) font
+                University of Illinois, Urbana, Illinois \\
+                Relevant Coursework: ECE 391 Computer Systems Engineering, \\CS 225 Data Structures, ECE 290 Computer Engineering I,\\ECE 210 Analog Signal Processing, INFO 490 Data Science
+                
+\vspace{-4mm}
+\section{AWARDS}
+\textnormal {National Science Foundation REU Fellowship} 
+
+\vspace{-3mm}
+\section{PUBLICATIONS}
+\textnormal{Kim, M., \textbf{Zhang, X.}, Milenkovic, O. (2014). \textit{Parallel Compression of Metagenomic Sequences via Extended Golomb Codes} Selected for a platform presentation at the Biological Data Science Workshop, Cold Spring Harbor Laboratory, November 2014}
+
+\vspace{-3mm}
+\section{WORK \\ EXPERIENCE} 
+{\bf Fulcrum GT} -- {\sl Software Engineering Intern}\hfill Summer 2015
+	\begin{itemize} \itemsep -2pt
+	\item Primary iOS backend developer -- responsible for designing and implementing the data model in Core Data for a legal time entry solution
+	\item Explored location and physical activity tracking, as well as geo-fencing, using Core Location and Core Motion frameworks
+	\item Designed overall program flow for asynchronous activities using NSNotificationCenter, GCD, delegates, and closures
+	\end{itemize}
+\vspace{-4mm}
+{\bf Coordinated Science Lab} -- {\sl Research Intern }\hfill Summer 2014 - Summer 2015
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Intern with the Bioinformatics Group of the ECE Department at UIUC 
+                 \item Worked with Perl and Java to automate parallelized DNA 
+                 {\mbox compression} and maximize DNA compression ratio
+                 \item Developed the Extended Golomb Code compression scheme adapted for DNA read-specific statistical distributions
+                \end{itemize}
+ 
+\vspace{-4mm}
+\section{PROJECTS} 
+{\bf ECE 391} -- {\sl x86 Assembly, C} \\ 
+\textnormal {Za Big New OS -- Linux-like operating system} 
+\begin{itemize} \itemsep -2pt
+\vspace {.5mm}
+\item Implemented the PIC configuration code and developed the interrupt handlers for the keyboard and RTC
+\item Implemented the Linux ext2 file system with both read and write functionality
+\item Developed the system calls for device and file I/O as well as the execution and halting of a task
+\item Implemented the C Standard Library as well as C runtime in conjunction with the native runtime 
+\end{itemize}
+\vspace{-3mm}
+{\bf BoilerMake} -- {\sl C, Java, Objective-C} \\
+\textnormal {HackedReality -- virtual reality using Google Cardboard} (\sl {Winning project 2014})
+\begin{itemize} \itemsep -2pt
+\item Developed a driver for a DDR Dancepad to mimic the omni-directional treadmill and implemented dynamic remapping of the dancepad buttons
+\item Used the magnetometer in Android phone to track the user's orientation
+\item Used the Pebble smartwatch to track the user's body motions
+\end{itemize}
+\vspace{-3mm}
+{\bf EXT9000} -- Linux EXT2/3/4 interactive parser in C for fun \hfill {\sl Work in progress} 
+
+\vspace{-4mm}
+\section {ACTIVITIES}
+
+{\bf IEEE@UIUC}
+\begin{itemize} \itemsep -2pt 
+ \item IEEE Projects Committee
+ \item IEEE Hackathon 2013 -- {\sl Java}
+ \begin{itemize}
+  \setlength{\itemsep}{2pt}
+  \vspace{-2mm}
+  \item PairTunes - a music streaming application that creates ad-hoc server-client networks across multiple computers to achieve concurrent surround sound playback
+ \end{itemize}
+\end{itemize}
+
+\vspace{-5mm}
+{\bf ACM@UIUC}
+\begin{itemize} \itemsep -2pt
+ \item SIGDave - various short-term projects
+ \item SigOPS - Special interest group in operating systems
+\end{itemize} 
+
+\vspace{-3mm}
+\section{TECHNICAL \\ SKILLS} {\sl Languages:} C, x86 Assembly, Swift, C++, Perl, Java, Objective-C
+
+\end{resume}
+\end{document}
+
+
+
+
