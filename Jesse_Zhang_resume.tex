@@ -15,6 +15,7 @@
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
+\vspace{-4mm}
 \address{\small 505 E. Stoughton St\\
 \small Apt \#8\\
 \small Champaign, IL 61820}
@@ -31,7 +32,7 @@
 	              % any postscript font) and just slanted in
 		      %	Computer Modern (default) font
                 University of Illinois, Urbana, Illinois \\
-                Relevant Coursework: ECE 411 Computer Organization \& Design, \\ECE 408 Applied Parallel Programming, ECE 391 Computer Systems Engineering,  CS 225 Data Structures, ECE 290 Computer Engineering I, ECE 210 Analog Signal Processing, INFO 490 Data Science
+                Relevant Coursework: ECE 411 Computer Organization \& Design, \\ECE 391 Computer Systems Engineering, CS 423 Operating Systems Design, \\ECE 408 Applied Parallel Programming, CS 225 Data Structures
                 
 \vspace{-4mm}
 \section{AWARDS}
@@ -39,29 +40,44 @@
 
 \vspace{-3mm}
 \section{PUBLICATIONS}
+\textnormal{Kim, M., \textbf{Zhang, X.}, Milenkovic, O. (2016). MetaCRAM: an integrated pipeline for metagenomic taxonomy identification and compression. \textit{BMC Bioinformatics}. 17:94.}\\
 \textnormal{Kim, M., \textbf{Zhang, X.}, Milenkovic, O. (2014). \textit{Parallel Compression of Metagenomic Sequences via Extended Golomb Codes} Selected for a platform presentation at the Biological Data Science Workshop, Cold Spring Harbor Laboratory, November 2014}
 
-\vspace{-3mm}
+\vspace{-4mm}
 \section{WORK \\ EXPERIENCE} 
+{\bf Apple} - {\sl Software Engineering Intern}\hfill \textit{In Progress}\vspace{1mm}\\
 {\bf Fulcrum GT} -- {\sl Software Engineering Intern}\hfill Summer 2015 - Now
 	\begin{itemize} \itemsep -2pt
 	\item Launched Epoch, a legal time entry solution, at ILTA 2015
 	\item Primary iOS backend developer -- responsible for designing and implementing the data model in Core Data for Epoch
 	\item Explored location and physical activity tracking, as well as geo-fencing, using Core Location and Core Motion frameworks
-	\item Designed overall program flow for asynchronous activities using NSNotificationCenter, GCD, delegates, and closures
+	\item Designed overall program flow for asynchronous activities using NSNotificationCenter, libdispatch, delegates, and closures
 	\end{itemize}
-\vspace{-2mm}
+\vspace{-3mm}
 {\bf ECE 391} -- {\sl Course Staff}\hfill August 2015 - Now\vspace{1mm}\\
 {\bf Coordinated Science Lab} -- {\sl Research Intern }\hfill Summer 2014 - Summer 2015
                  \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Intern with the Bioinformatics Group of the ECE Department at UIUC 
-                 \item Worked with Perl and Java to automate parallelized DNA 
-                 {\mbox compression} and maximize DNA compression ratio
+                 \item Automate parallelized DNA compression and maximize DNA compression ratio
                  \item Developed the Extended Golomb Code compression scheme adapted for DNA read-specific statistical distributions
                 \end{itemize}
  
 \vspace{-4mm}
 \section{PROJECTS} 
+{\bf ECE 411} -- {\sl SystemVerilog} \\ 
+\textnormal {WenMeiCrwu -- Pipelined LC-3 CPU with L1, L2 Caches} 
+\begin{itemize} \itemsep -2pt
+\vspace {.5mm}
+\item Implemented basic structure of the pipelined CPU
+\item Implemented L1 and L2 caches 
+	\begin{itemize} \itemsep -2pt
+	\vspace{-2mm}
+	\item Multicycle 4-way set associative L2 with true LRU replacement policy
+	\vspace{0.5mm}
+	\item Eviction Write Buffer, Victim Cache, and Hardware Prefetching in the memory hierarchy
+	\vspace{-1.5mm}
+	\end{itemize}
+\end{itemize}
+\vspace{-4mm}
 {\bf ECE 391} -- {\sl x86 Assembly, C} \\ 
 \textnormal {Za Big New OS -- Linux-like operating system} 
 \begin{itemize} \itemsep -2pt
@@ -80,24 +96,9 @@
 \item Used the Pebble smartwatch to track the user's body motions
 \end{itemize}
 \vspace{-3mm}
-{\bf EXT9000} -- Linux EXT2/3/4 interactive parser in C for fun \hfill {\sl Work in progress} 
+%{\bf EXT9000} -- Linux EXT2/3/4 interactive parser in C for fun \hfill {\sl Work in progress} 
 
-\vspace{-4mm}
-\section {ACTIVITIES}
-
-{\bf IEEE@UIUC}
-\begin{itemize} \itemsep -2pt 
- \item IEEE Projects Committee
-\end{itemize}
-
-\vspace{-3mm}
-{\bf ACM@UIUC}
-\begin{itemize} \itemsep -2pt
- \item SIGDave - various short-term projects
-\end{itemize} 
-
-\vspace{-3mm}
-\section{TECHNICAL \\ SKILLS} {\sl Languages:} C, x86 Assembly, Swift, C++, Perl, Java, Objective-C
+\section{TECHNICAL \\ SKILLS} {\sl Languages:} C, x86 Assembly, Swift, SystemVerilog, C++, Perl, Java, Objective-C
 
 \end{resume}
 \end{document}
