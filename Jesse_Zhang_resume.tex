@@ -15,11 +15,11 @@
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
-\vspace{-4mm}
+\vspace{-3mm}
 \address{\small 508 E. Clark St\\
 \small Apt \#404\\
 \small Champaign, IL 61820}
-\address{\small xzhan121@illinois.edu\\
+\address{\small email: xzhan121@illinois.edu\\
 \small cell: 502.510.4947\\
 \small github: macisasandwich}
 
@@ -32,82 +32,79 @@
 	              % any postscript font) and just slanted in
 		      %	Computer Modern (default) font
                 University of Illinois at Urbana-Champaign \\
-                Relevant Coursework: ECE 511 Computer Architecture, \\ECE 411 Computer Organization \& Design, CS 461 Computer Security I, \\ECE 391 Computer Systems Engineering,  CS 423 Operating Systems Design, \\ECE 408 Applied Parallel Programming, CS 225 Data Structures
-                
-%\vspace{-4mm}
-%\section{AWARDS}
-%\textnormal {National Science Foundation REU Fellowship} 
+                Relevant Coursework: 
+                \begin{itemize} \itemsep -2pt
+	                \item Computer Architecture
+	                \item Computer Organization \& Design
+	                \item Computer Systems Engineering
+	                \item Computer Security \& Lab
+	                \item Operating Systems Design
+	            \end{itemize}
 
 \vspace{-3mm}
 \section{PUBLICATIONS}
 \textnormal{Kim, M., \textbf{Zhang, X.}, Milenkovic, O. (2016). MetaCRAM: an integrated pipeline for metagenomic taxonomy identification and compression. \textit{BMC Bioinformatics}. 17:94.}
-%\textnormal{Kim, M., \textbf{Zhang, X.}, Milenkovic, O. (2014). \textit{Parallel Compression of Metagenomic Sequences via Extended Golomb Codes} Selected for a platform presentation at the Biological Data Science Workshop, Cold Spring Harbor Laboratory, November 2014}
 
-\vspace{-4mm}
+\vspace{-3mm}
 \section{WORK \\ EXPERIENCE} 
 {\bf Apple} - {\sl Software Engineering Intern}\hfill Summer 2016
-	\begin{itemize} \itemsep -2pt
+	\begin{itemize} \itemsep -1pt
 	\item Developed a proof-of-concept iOS app for retail store inventory management
 	\item Interacted with SAP systems on the backend
 	\item Participated in designing the service calls and the overall program flow 
-	\end{itemize}
+\end{itemize}
 
 \vspace{-3mm}
 {\bf Fulcrum GT} -- {\sl Software Engineering Intern}\hfill Summer 2015
-	\begin{itemize} \itemsep -2pt
+	\begin{itemize} \itemsep -1pt
 	\item Launched Epoch, a legal time entry solution, at ILTA 2015
-	\item Primary iOS backend developer -- responsible for designing and implementing the data model in Core Data for Epoch
-	\item Explored location and physical activity tracking, as well as geo-fencing, using Core Location and Core Motion frameworks
-	\item Designed overall program flow for asynchronous activities using NSNotificationCenter, libdispatch, delegates, and closures
-	\end{itemize}
+	\item Primary iOS backend developer -- responsible for designing and implementing data models and asynchronous program flow for Epoch
+	\item Explored various iOS frameworks and APIs to achieve features such as location tracking, geo-fencing, and physical activity tracking
+\end{itemize}
 	
 \vspace{-3mm}
 {\bf ECE 391} -- {\sl Course Staff}\hfill August 2015 - Now
-
-\vspace{-3mm}
-{\bf Coordinated Science Lab} -- {\sl Research Intern }\hfill May 2014 - August 2015
-	\begin{itemize}  \itemsep -2pt %reduce space between items
-	\item Automate parallelized DNA compression and maximize DNA compression ratio
-	\item Developed the Extended Golomb Code compression scheme adapted for DNA read-specific statistical distributions
-	\end{itemize}
  
-\vspace{-4mm}
+\vspace{-3mm}
 \section{PROJECTS} 
-{\bf ECE 411} -- {\sl SystemVerilog} \\
-\textnormal {WenMeiCrwu -- Pipelined LC-3 CPU with L1, L2 Caches} 
-\begin{itemize} \itemsep -2pt
-\vspace {.5mm}
-\item Implemented basic structure of the pipelined CPU
-\item Implemented L1 and L2 caches 
-	\begin{itemize} \itemsep -2pt
-	\vspace{-2mm}
-	\item Multicycle 4-way set associative L2 with true LRU replacement policy
-	\vspace{0.5mm}
-	\item Eviction Write Buffer, Victim Cache, and Hardware Prefetching in the memory hierarchy
-	\vspace{-1.5mm}
-	\end{itemize}
-\end{itemize}
-\vspace{-4mm}
-{\bf ECE 391} -- {\sl x86 Assembly, C} \\ 
-\textnormal {Za Big New OS -- Linux-like operating system} 
-\begin{itemize} \itemsep -2pt
-\vspace {.5mm}
-\item Implemented the PIC configuration code and developed the interrupt handlers for the keyboard and RTC
-\item Implemented the Linux ext2 file system with both read and write functionality
-\item Developed the system calls for device and file I/O as well as the execution and halting of a task
-\item Implemented the C Standard Library as well as C runtime in conjunction with the native runtime 
-\end{itemize}
-\vspace{-3mm}
-{\bf BoilerMake} -- {\sl C, Java, Objective-C} \\
-\textnormal {HackedReality -- virtual reality using Google Cardboard} (\sl {Winning project 2014})
-\begin{itemize} \itemsep -2pt
-\item Developed a driver for a DDR Dancepad to mimic the omni-directional treadmill and implemented dynamic remapping of the dancepad buttons
-\item Used the magnetometer in Android phone to track the user's orientation
-\item Used the Pebble smartwatch to track the user's body motions
-\end{itemize}
-\vspace{-3mm}
-%{\bf EXT9000} -- Linux EXT2/3/4 interactive parser in C for fun \hfill {\sl Work in progress} 
 
+{\bf Pipelined CPU with Cache Subsystem} -- {\sl SystemVerilog} 
+\begin{itemize} \itemsep -1pt
+%\vspace {.5mm}
+    \item Designed and coded the 5 stages of the pipeline 
+    \item Implemented L1 and L2 caches with 4-way set-associative and true LRU replacement policy as well as components such as eviction write buffer, victim cache, and hardware prefetching
+\end{itemize}
+
+\vspace{-3mm}
+{\bf Linux-like Operating System} -- {\sl x86 Assembly, C} 
+\begin{itemize} \itemsep -1pt
+%\vspace {.5mm}
+    \item Supports various drivers such as the EXT2 filesystem, IDE controller, PIT, PIC, and keyboard
+    \item Implemented the system calls necessary for the C Standard Library as well as C runtime
+\end{itemize}
+
+\vspace{-3mm}
+{\bf TAGE Branch Predictor} -- {\sl C++} 
+\begin{itemize} \itemsep -1pt
+    \item From the paper {\sl A case for (partially) tagged Geometric History Length Branch Prediction} by Andre Seznec and Pierre Michaud
+    \item Modified the GEM5 simulator's built-in out-of-order ARM processor's branch predictor to use the TAGE predictor
+\end{itemize}
+
+\vspace{-3mm}
+{\bf HackedReality} -- {\sl C, Java, Objective-C \hfill(BoilerMake 2014 Winner)}
+\begin{itemize} \itemsep -1pt
+    \item Virtual reality simulator using Google Cardboard (Android phone), Pebble smartwatch, and a PS2 DDR Dancepad
+    \item Reverse-engineered the dancepad IO to mimic an omni-directional treadmill with dynamic directional remapping of the buttons
+    \item Used the magnetometer and accelerometer in the phone to track the user's orientation
+\end{itemize}
+
+\vspace{-3mm}
+{\bf EXT9000} -- {\sl C} \hfill {\sl Work in progress}
+\begin{itemize} \itemsep -1pt
+    \item An interactive parser for the EXT2/3 and FAT filesystems
+\end{itemize}
+
+\vspace{-3mm}
 \section{TECHNICAL \\ SKILLS} 
 {\sl Programming Languages:} C, Assembly, Swift, SystemVerilog, C++, Perl, Java\\
 {\sl Languages:} Chinese, English
