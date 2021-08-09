@@ -2,10 +2,7 @@
 \documentclass[resmargin]{res}
 \usepackage[top = .7in, bottom = .5in, left = 1in]{geometry}
 \usepackage{enumitem}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
 \setlength{\textwidth}{5.1in} % set width of text portion
-%\setlist{nolistsep}
 
 \begin{document}
 
@@ -13,97 +10,104 @@
 \moveleft.5\hoffset\vbox{\centerline{\Huge\bf Jesse Zhang}}
 % Draw a horizontal line the whole width of resume:
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
 \vspace{-5mm}
-\address{\small github: macisasandwich}
+\address{\small github: x-jesse-zhang}
 \address{\small email: jesse.zhang8759@gmail.com}
 
 
 \begin{resume}
 
-\vspace{-5mm}
-\section{EDUCATION} {\sl Bachelor of Science,} Computer Engineering \\
-                      % \sl will be bold italic in New Century Schoolbook (or
-	              % any postscript font) and just slanted in
-		      %	Computer Modern (default) font
-                University of Illinois at Urbana-Champaign \\
-                Relevant Coursework: 
-                \begin{itemize} \itemsep -2pt
-	                \item Computer Architecture
-	                \item Computer Organization \& Design
-	                \item Computer Systems Engineering
-	                \item Computer Security \& Lab
-	                \item Operating Systems Design
-	            \end{itemize}
-
-\vspace{-3mm}
+%\vspace{-3mm}
 \section{WORK \\ EXPERIENCE} 
-	{\bf Yahoo} - {\sl Software Engineer I} \hfill August 2017 - Now	\begin{itemize} \itemsep -1pt
-		\item Working on testing and build systems for Apache Traffic Server (ATS) using the Reusable Gold Testing System framework (AuTest) and partially BuildBot
-		\item Implemented new features and community requests into AuTest for ease of test writing and readability 
-		\item Improved overall functional testing reliability for the project
-		\item Implementing a set of automatic replay tools for ATS that replays captured production traffic in an isolated environment for reliability testing
+	{\bf Amazon} - {\sl Software Dev Engineer} \hfill Sept. 2019 - Now
+	\begin{itemize}
+		\vspace{1mm}
+		\item Launched Amazon Halo - Amazon's Health and Wellness membership
+		\item Designed and implemented an online data collection mechanism to improve product accuracy based on customer feedback
+		\item Developed and deployed to production core features for Halo's Tone domain on iOS
+		\item Implemented on-demand Bluetooth connectivity for the Halo app on iOS
+		\item Worked between domains to investigate and improve the battery life for the Halo Band to address top post-launch customer concerns
+		\item Proposed and developed a more scalable approach to phone-accessory interaction for the Halo app to accomodate for future domains that may require accessory interactions
+		\item Improved operational well-being of the Tone feature via runbooks and templatized queries for commonly seen problems
+		\item Advised leadership on critical Tone privacy concerns pre-launch
+		\item Mentored intern to develop automated machine learning model test pipeline
+	\end{itemize}
+
+	{\bf Yahoo} - {\sl Software Engineer I} \hfill Aug. 2017 - Sept. 2019	
+	\begin{itemize}
+		\vspace{1mm}
+		\item Worked on test and build systems for Apache Traffic Server (ATS) using the Reusable Gold Testing System framework (AuTest) and BuildBot
+		\item Developed new features and community requests for AuTest
+		\item Improved overall functional testing reliability for ATS
+		\item Created a set of automatic traffic replay tools for ATS to reproduce captured production traffic in an isolated environment for reliability testing
 	\end{itemize}
 	
-	\vspace{-3mm}
+	%\vspace{-3mm}
 	{\bf Apple} - {\sl Software Engineering Intern}\hfill Summer 2016
-		\begin{itemize} \itemsep -1pt
-		\item Developed an iOS app with SAP integration for retail store inventory management
-		\item Designed new SAP service calls for the inventory pipeline
+	\begin{itemize}
+		\vspace{1mm}
+		\item Developed an iOS app with SAP integration for automated retail store inventory management
+		\item Designed new a SAP service for the inventory pipeline
 	\end{itemize}
 	
-	\vspace{-3mm}
+	%\vspace{-3mm}
 	{\bf Fulcrum GT} -- {\sl Software Engineering Intern}\hfill Summer 2015
-		\begin{itemize} \itemsep -1pt
+	\begin{itemize}
+		\vspace{1mm}
 		\item Launched Epoch, a legal time entry solution using SAP, at ILTA 2015
-		\item Designed and implemented Epoch's backend systems 
+		\item Designed and implemented Epoch's backend systems with SAP integration
 		\item Explored various iOS frameworks and APIs for location tracking, geo-fencing, and physical activity tracking
 	\end{itemize}
 
-\vspace{-3mm}
+%\vspace{-3mm}
 \section{PUBLICATIONS}
 	\textnormal{Kim, M., \textbf{Zhang, X.}, Milenkovic, O. (2016). MetaCRAM: an integrated pipeline for metagenomic taxonomy identification and compression. \textit{BMC Bioinformatics}. 17:94.}
- 
-\vspace{-3mm}
-\section{PROJECTS} 
 
-	{\bf Pipelined CPU with Cache Subsystem} -- {\sl SystemVerilog} 
-	\begin{itemize} \itemsep -1pt
-	%\vspace {.5mm}
-	    \item Designed and coded the 5 stages of a CPU pipeline 
-	    \item Implemented L1 and L2 caches with 4-way set-associativity and true LRU replacement policy as well as components such as eviction write buffer, victim cache, and hardware prefetching
-	\end{itemize}
-	
-	\vspace{-3mm}
-	{\bf Linux-like Operating System} -- {\sl x86 Assembly, C} 
-	\begin{itemize} \itemsep -1pt
-	%\vspace {.5mm}
-	    \item Supports various drivers such as the EXT2 filesystem, IDE controller, PIT, PIC, and keyboard
-	    \item Implemented the system calls necessary for the C Standard Library as well as C runtime
-	\end{itemize}
-	
-	\vspace{-3mm}
-	{\bf TAGE Branch Predictor} -- {\sl C++} 
-	\begin{itemize} \itemsep -1pt
-	    \item From the paper {\sl A case for (partially) tagged Geometric History Length Branch Prediction} by Andre Seznec and Pierre Michaud
-	    \item Modified the GEM5 simulator's built-in out-of-order ARM processor's branch predictor to use the TAGE predictor
-	\end{itemize}
-	
-	\vspace{-3mm}
-	{\bf HackedReality} -- {\sl C, Java, Objective-C}
-	\begin{itemize} \itemsep -1pt
-	    \item Virtual reality simulator using Google Cardboard (Android phone), Pebble smartwatch, and a PS2 DDR Dancepad
-	    \item Reverse-engineered a USB dancepad to mimic an omni-directional treadmill with dynamic directional remapping of the buttons
-	\end{itemize}
+%\vspace{-3mm}
+\section{EDUCATION} {\sl Bachelor of Science,} Computer Engineering \\
+                University of Illinois at Urbana-Champaign
+%                Relevant Coursework: 
+%                \begin{itemize} \itemsep -2pt
+%	                \item Computer Architecture
+%	                \item Computer Organization \& Design
+%	                \item Computer Systems Engineering
+%	                \item Computer Security \& Lab
+%	                \item Operating Systems Design
+%	            \end{itemize}
 
-\vspace{-3mm}
+%\vspace{-3mm}
 \section{TECHNICAL \\ SKILLS} 
-{\sl Programming Languages:} Python, C++, C, x86 Assembly, Swift, SystemVerilog, Java\\
-{\sl Languages:} English, Chinese
+{\sl Programming Languages:} Swift, Python, C++, C, SystemVerilog, Java\\
 
 \end{resume}
 \end{document}
+ 
+%\vspace{-3mm}
+%\section{PROJECTS} 
+%
+%	{\bf Pipelined CPU with Cache Subsystem} -- {\sl SystemVerilog} 
+%	\begin{itemize} \itemsep -1pt
+%	%\vspace {.5mm}
+%	    \item Designed and coded the 5 stages of a CPU pipeline 
+%	    \item Implemented L1 and L2 caches with 4-way set-associativity and true LRU replacement policy as well as components such as eviction write buffer, victim cache, and hardware prefetching
+%	\end{itemize}
+%	
+%	\vspace{-3mm}
+%	{\bf Linux-like Operating System} -- {\sl x86 Assembly, C} 
+%	\begin{itemize} \itemsep -1pt
+%	%\vspace {.5mm}
+%	    \item Supports various drivers such as the EXT2 filesystem, IDE controller, PIT, PIC, and keyboard
+%	    \item Implemented the system calls necessary for the C Standard Library as well as C runtime
+%	\end{itemize}
+%	
+%	\vspace{-3mm}
+%	{\bf TAGE Branch Predictor} -- {\sl C++} 
+%	\begin{itemize} \itemsep -1pt
+%	    \item From the paper {\sl A case for (partially) tagged Geometric History Length Branch Prediction} by Andre Seznec and Pierre Michaud
+%	    \item Modified the GEM5 simulator's built-in out-of-order ARM processor's branch predictor to use the TAGE predictor
+%	\end{itemize}
+
+
 
 
 
